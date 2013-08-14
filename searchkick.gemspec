@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "tire"
   spec.add_dependency "tire-contrib"
+  spec.add_dependency "ruby-stemmer"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
