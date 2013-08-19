@@ -67,7 +67,7 @@ class Store < ActiveRecord::Base
 end
 
 Product.index.delete if Product.index.exists?
-Product.reindex
+# Product.reindex
 Product.reindex # run twice for both index paths
 
 class MiniTest::Unit::TestCase
