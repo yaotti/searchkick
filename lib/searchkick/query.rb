@@ -278,6 +278,9 @@ module Searchkick
         end
       end
 
+      # timeout
+      payload[:timeout] = options[:timeout] if options[:timeout]
+
       # An empty array will cause only the _id and _type for each hit to be returned
       # http://www.elasticsearch.org/guide/reference/api/search/fields/
       payload[:fields] = [] if load
